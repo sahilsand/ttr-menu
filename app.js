@@ -249,7 +249,9 @@ window.addEventListener('scroll', () => {
     }, 150);
 });
 
-// ── PWA Service Worker ───────────────────────────────────────────
+// ✅ Unregister any existing service worker
 if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => navigator.serviceWorker.register('sw.js'));
+    navigator.serviceWorker.getRegistrations().then(registrations => {
+        registrations.forEach(reg => reg.unregister());
+    });
 }
