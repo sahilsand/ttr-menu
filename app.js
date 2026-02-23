@@ -2,9 +2,22 @@ const container = document.getElementById('menu-container');
 const nav = document.getElementById('cat-nav');
 const landingScreen = document.getElementById('landing-screen');
 
+// ── Pizza sub-group mapping ──────────────────────────────────────
+const categorySubGroups = {
+    "Pizza": {
+        "Margherita":                  "Sourdough",
+        "Farmhouse":                   "Sourdough",
+        "Cheese N Corn":               "Sourdough",
+        "Mushroom Margherita":         "Sourdough",
+        "Indi Tandoori Paneer 🌶️":     "Sourdough",
+        "TTR Tomato Basil Crisp":      "TTR Special Crisp ⭐",
+        "TTR Veggie Exotic Crisp":     "TTR Special Crisp ⭐",
+        "TTR Makhani Paneer Crisp ⭐": "TTR Special Crisp ⭐",
+    }
+};
+
 // ── Render a single menu card ────────────────────────────────────
 function renderCard(item, layout = 'horizontal') {
-    // ✅ Use exact img path if provided, else show placeholder
     const imgSrc = item.img
         ? item.img
         : 'https://via.placeholder.com/150?text=Food';
@@ -71,6 +84,35 @@ function renderRemainingSteps(steps) {
     return html;
 }
 
+// ── Render items with optional sub-group dividers ────────────────
+function renderItems(cat, items, layout = 'horizontal') {
+    let html = '';
+    let lastSubGroup = null;
+
+    items.forEach(item => {
+        const subGroup = categorySubGroups[cat]?.[item.name];
+
+        if (subGroup && subGroup !== lastSubGroup) {
+            // ── Sub-group heading row with price labels ──────────
+            const isSubGroupWithPrices = cat === 'Pizza';
+            html += `
+                <div class="sub-group-row">
+                    <div class="sub-group-label">${subGroup}</div>
+                    ${isSubGroupWithPrices
+                        ? `<div class="price-label"><span>Regular</span><span>Medium</span></div>`
+                        : ''}
+                </div>
+            `;
+            lastSubGroup = subGroup;
+        }
+
+        html += renderCard(item, layout);
+    });
+
+    return html;
+}
+
+
 // ── Build full menu for a given section id ───────────────────────
 function buildMenu(sectionId) {
     container.innerHTML = '';
@@ -110,7 +152,7 @@ function buildMenu(sectionId) {
             section.innerHTML = `<h2>${cat}</h2>`;
         }
 
-        // Bowl steps + vertical cards
+        // Bowl steps + vertical cards OR sub-grouped horizontal cards
         if (categorySteps[cat]) {
             const stepsData = categorySteps[cat];
             section.innerHTML += `
@@ -124,14 +166,10 @@ function buildMenu(sectionId) {
                     </div>
                 </div>
             `;
-            grouped[cat].forEach(item => {
-                section.innerHTML += renderCard(item, 'vertical');
-            });
+            section.innerHTML += renderItems(cat, grouped[cat], 'vertical');
             section.innerHTML += renderRemainingSteps(stepsData.steps.slice(1));
         } else {
-            grouped[cat].forEach(item => {
-                section.innerHTML += renderCard(item, 'horizontal');
-            });
+            section.innerHTML += renderItems(cat, grouped[cat], 'horizontal');
         }
 
         // Footer note
@@ -158,11 +196,10 @@ function showMenu(sectionId) {
     landingScreen.style.display = 'none';
     container.style.display = 'block';
     nav.style.display = 'flex';
-    document.getElementById('back-btn').style.display = 'flex'; // ✅ flex not block
+    document.getElementById('back-btn').style.display = 'flex';
     buildMenu(sectionId);
     window.scrollTo({ top: 0 });
 }
-
 
 // ── Build landing cards ──────────────────────────────────────────
 sections.forEach(sec => {
@@ -191,18 +228,13 @@ function adjustLayout() {
 
     nav.style.top = header.offsetHeight + 'px';
 
-    // ✅ Landing only needs header height (nav is hidden there)
     landingScreen.style.paddingTop = (header.offsetHeight + 15) + 'px';
-
-    // Menu needs header + nav height
     container.style.paddingTop = (totalOffset + 15) + 'px';
 
     document.querySelectorAll('.category-section').forEach(s => {
         s.style.scrollMarginTop = (totalOffset + 10) + 'px';
     });
 }
-
-
 
 window.addEventListener('load', () => { adjustLayout(); showLanding(); });
 window.addEventListener('resize', adjustLayout);
@@ -254,7 +286,7 @@ window.addEventListener('scroll', () => {
     }, 150);
 });
 
-// ✅ Unregister any existing service worker
+// ── Unregister service worker ────────────────────────────────────
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.getRegistrations().then(registrations => {
         registrations.forEach(reg => reg.unregister());
