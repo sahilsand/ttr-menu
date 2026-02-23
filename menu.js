@@ -25,6 +25,10 @@ const sections = [
 
 const menuData = [
 
+    // ------------------------------------------------------------------------------------------------
+    // ---------------------------------------FOOD-----------------------------------------------------
+    // ------------------------------------------------------------------------------------------------
+
     // ── PARATHA BOWLS ─────────────────────────────────────────
     { section: "food", cat: "Paratha Bowls", name: "Fresh Creamy Paneer", price: "335", img: "images/Fresh Cremy paneer.jpg", desc: "Fresh, creamy paneer stuffed in soft parathas, served warm for a comforting, wholesome bowl rooted in purity and rustic goodness" },
     { section: "food", cat: "Paratha Bowls", name: "Mava Mirchi ⭐", price: "315", img: "images/Mava Mirchi.jpg", desc: "Spiced mava-stuffed green chilies wrapped in soft parathas, offering a bold, earthy bowl with rich, rustic flavors and organic warmth" },
@@ -133,23 +137,109 @@ const menuData = [
     { section: "food", cat: "Salads", name: "Protein Chaat", price: "250", img: "images/Protein chaat salad.jpg.jpeg", desc: "Tomato, boiled moong, Imli chutney, Chickpea, Rajma, curd, TTR dressing. (~360 kcal, 20g Protein)" },
     { section: "food", cat: "Salads", name: "Classic Fruit Salad", price: "299", img: "", desc: "Seasonal fresh fruits seasoned with taste twist" },
 
-    // ── COFFEE (HOT) ──────────────────────────────────────────
-    { section: "beverages", cat: "Coffee (Hot)", name: "Bullet Coffee", price: "120", img: "", desc: "Americano with cow ghee" },
-    { section: "beverages", cat: "Coffee (Hot)", name: "Irish Coffee", price: "160", img: "", desc: "A rich blend of coffee, Irish whiskey, and cream" },
-    { section: "beverages", cat: "Coffee (Hot)", name: "Biscoff Latte", price: "190", img: "", desc: "Lotus biscoff & espresso with thin layered frothed milk" },
-    { section: "beverages", cat: "Coffee (Hot)", name: "Chilli Cinnamon Latte", price: "190", img: "", desc: "Espresso with steamed milk, cinnamon & light foam" },
 
-    // ── ICED & FRAPPES ────────────────────────────────────────
-    { section: "beverages", cat: "Iced & Frappes", name: "Vietnamese White", price: "200", img: "", desc: "Light-roast coffee, creamy, sweet, smooth" },
-    { section: "beverages", cat: "Iced & Frappes", name: "Oreo Coffee", price: "200", img: "", desc: "Cold coffee blended with Oreo" },
-    { section: "beverages", cat: "Iced & Frappes", name: "Tiramisu Frappe", price: "240", img: "", desc: "Creamy frappe with rich tiramisu flavor" },
-    { section: "beverages", cat: "Iced & Frappes", name: "Nutella Almond Frappe", price: "280", img: "", desc: "Indulgent Nutella and almond blend" },
+    // ------------------------------------------------------------------------------------------------
+    // ---------------------------------------BEVERAGES------------------------------------------------
+    // ------------------------------------------------------------------------------------------------
+    
+    
+    // ── HOT COFFEE (BLACK) ────────────────────────────────────
+    { section: "beverages", cat: "Hot Coffee (Black)", name: "Bullet Coffee", price: "120", img: "", desc: "Americano with cow ghee" },
+    { section: "beverages", cat: "Hot Coffee (Black)", name: "Espresso", price: "100", img: "", desc: "Rich full bodied shot of pure coffee" },
+    { section: "beverages", cat: "Hot Coffee (Black)", name: "Long Espresso", price: "120", img: "", desc: "Long/double shot espresso" },
+    { section: "beverages", cat: "Hot Coffee (Black)", name: "Americano", price: "120", img: "", desc: "Espresso diluted with hot water for a smoother taste" },
+    { section: "beverages", cat: "Hot Coffee (Black)", name: "Macchiato", price: "100", img: "", desc: "Espresso topped with foamed milk" },
+    { section: "beverages", cat: "Hot Coffee (Black)", name: "Irish Coffee", price: "160", img: "", desc: "A rich, warm blend of coffee, Irish whiskey, and cream" },
+    { section: "beverages", cat: "Hot Coffee (Black)", name: "Vietnamese Black", price: "170", img: "", desc: "Strong, bold, intense, dark-roasted robusta flavor, high caffeine" },
 
-    // ── MOCKTAILS & MORE ──────────────────────────────────────
-    { section: "beverages", cat: "Mocktails & More", name: "Spiced Guava", price: "180", img: "", desc: "Sweet guava juice with a dash of chilli & masala" },
-    { section: "beverages", cat: "Mocktails & More", name: "Oats Banana Smoothie", price: "210", img: "", desc: "Healthy oats and banana blend" },
-    { section: "beverages", cat: "Mocktails & More", name: "Ragi Milkshake", price: "210", img: "", desc: "Nutritious ragi milkshake" },
-    { section: "beverages", cat: "Mocktails & More", name: "Makhana Milkshake", price: "260", img: "", desc: "Creamy makhana based natural milkshake" },
+    // ── HOT COFFEE (WHITE) ────────────────────────────────────
+    { section: "beverages", cat: "Hot Coffee (White)", name: "Cappuccino", price: "150", img: "", desc: "Espresso topped with steamed milk and a thick layer of foam" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "Cafe Latte", price: "150", img: "", desc: "Smooth espresso with steamed milk and light foam" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "Flat White", price: "150", img: "", desc: "Espresso with steamed milk and micro foam" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "Cortado (Hot/Ice)", price: "150", img: "", desc: "Espresso with equal amount of milk" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "Cafe Mocha", price: "170", img: "", desc: "Espresso with rich dark chocolate & steamed milk" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "White Mocha", price: "170", img: "", desc: "Espresso with rich white chocolate & steamed milk" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "Biscoff Latte", price: "190", img: "", desc: "Lotus biscoff & espresso with thin layered frothed milk" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "Chilli Cinnamon Latte", price: "190", img: "", desc: "Smooth espresso with steamed milk, cinnamon & light foam" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "Hot Chocolate", price: "199", img: "", desc: "Classic creamy cocoa" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "Nutella Hot Chocolate", price: "220", img: "", desc: "Classic creamy cocoa with Nutella" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "Vietnamese White", price: "200", img: "", desc: "Light-roast coffee, creamy, sweet, smooth" },
+
+    // ── ICED COFFEE ───────────────────────────────────────────
+    { section: "beverages", cat: "Iced Coffee", name: "Iced Americano", price: "125", img: "", desc: "Chilled espresso diluted with cold water" },
+    { section: "beverages", cat: "Iced Coffee", name: "Iced Cappuccino", price: "155", img: "", desc: "Chilled espresso with cold milk and foam" },
+    { section: "beverages", cat: "Iced Coffee", name: "Iced Mocha", price: "170", img: "", desc: "Iced espresso with dark chocolate and milk" },
+    { section: "beverages", cat: "Iced Coffee", name: "Iced Latte", price: "160", img: "", desc: "Smooth espresso over ice with cold milk" },
+    { section: "beverages", cat: "Iced Coffee", name: "Iced Hazelnut Latte", price: "180", img: "", desc: "Espresso with hazelnut syrup over ice" },
+    { section: "beverages", cat: "Iced Coffee", name: "Iced Biscoff Latte", price: "200", img: "", desc: "Lotus biscoff espresso served over ice" },
+    { section: "beverages", cat: "Iced Coffee", name: "Iced Vietnamese Black", price: "170", img: "", desc: "Strong dark-roasted robusta poured over ice" },
+    { section: "beverages", cat: "Iced Coffee", name: "Iced Vietnamese White", price: "200", img: "", desc: "Creamy light-roast coffee served cold" },
+    { section: "beverages", cat: "Iced Coffee", name: "Oreo Coffee", price: "200", img: "", desc: "Cold coffee blended with Oreo" },
+    { section: "beverages", cat: "Iced Coffee", name: "Coffee Tornado", price: "220", img: "", desc: "Swirling iced coffee blend" },
+
+    // ── FRAPPE ────────────────────────────────────────────────
+    { section: "beverages", cat: "Frappe", name: "Signature Frappe", price: "200", img: "", desc: "TTR's signature blended coffee frappe" },
+    { section: "beverages", cat: "Frappe", name: "Mocha Frappe", price: "230", img: "", desc: "Rich chocolate and coffee blended frappe" },
+    { section: "beverages", cat: "Frappe", name: "Choco Chip Frappe", price: "230", img: "", desc: "Blended coffee frappe with chocolate chips" },
+    { section: "beverages", cat: "Frappe", name: "Tiramisu Frappe", price: "240", img: "", desc: "Creamy frappe with rich tiramisu flavor" },
+    { section: "beverages", cat: "Frappe", name: "Hazelnut Frappe", price: "240", img: "", desc: "Smooth blended coffee with hazelnut" },
+    { section: "beverages", cat: "Frappe", name: "Biscoff Frappe", price: "250", img: "", desc: "Blended frappe with lotus biscoff flavor" },
+    { section: "beverages", cat: "Frappe", name: "Nutella Almond Frappe", price: "280", img: "", desc: "Indulgent Nutella and almond blended frappe" },
+    { section: "beverages", cat: "Frappe", name: "Caramel Frappe", price: "250", img: "", desc: "Smooth blended frappe with rich caramel" },
+
+    // ── SIGNATURES ────────────────────────────────────────────
+    { section: "beverages", cat: "Signatures", name: "Espresso Tonic", price: "230", img: "", desc: "Iced espresso with tonic water" },
+    { section: "beverages", cat: "Signatures", name: "Coffee Punch", price: "199", img: "", desc: "Iced espresso with orange & cranberry juice" },
+    { section: "beverages", cat: "Signatures", name: "Affogato", price: "180", img: "", desc: "Espresso poured over vanilla ice cream" },
+    { section: "beverages", cat: "Signatures", name: "Detox", price: "180", img: "", desc: "Espresso with ginger and ice" },
+
+    // ── MANUAL BREWS ──────────────────────────────────────────
+    { section: "beverages", cat: "Manual Brews", name: "Whiskey Barrel", price: "199", img: "", desc: "Whiskey barrel processed specialty coffee brew" },
+    { section: "beverages", cat: "Manual Brews", name: "Red Wine", price: "160", img: "", desc: "Red wine processed specialty coffee brew" },
+    { section: "beverages", cat: "Manual Brews", name: "Rum", price: "160", img: "", desc: "Rum processed specialty coffee brew" },
+    { section: "beverages", cat: "Manual Brews", name: "Honey Sun-dried", price: "170", img: "", desc: "Honey sun-dried processed specialty coffee brew" },
+
+    // ── MOCKTAILS ─────────────────────────────────────────────
+    { section: "beverages", cat: "Mocktails", name: "Classic Mojito", price: "180", img: "", desc: "Refreshing mint, lime and soda blended for a crisp, cool drink" },
+    { section: "beverages", cat: "Mocktails", name: "Strawberry Mojito", price: "180", img: "", desc: "Fresh strawberries mixed with mint & lime for a fruity twist" },
+    { section: "beverages", cat: "Mocktails", name: "Watermelon Mojito", price: "180", img: "", desc: "Chilled watermelon infused with mint and lime for a light, summery sip" },
+    { section: "beverages", cat: "Mocktails", name: "Fresh Lime Soda", price: "150", img: "", desc: "Zesty lime with soda, served sweet, salty or balanced" },
+    { section: "beverages", cat: "Mocktails", name: "Spiced Guava", price: "180", img: "", desc: "Sweet guava juice with a dash of chilli & masala for a tangy kick" },
+    { section: "beverages", cat: "Mocktails", name: "Sparkling Vanilla", price: "150", img: "", desc: "Fizzy soda infused with smooth aromatic vanilla" },
+
+    // ── ICED TEA ──────────────────────────────────────────────
+    { section: "beverages", cat: "Iced Tea", name: "Lemon Mint Iced Tea", price: "190", img: "", desc: "Zesty lemon and cool mint blended with chilled tea" },
+    { section: "beverages", cat: "Iced Tea", name: "Peach Iced Tea", price: "210", img: "", desc: "Smooth iced tea infused with sweet, juicy peach flavour" },
+    { section: "beverages", cat: "Iced Tea", name: "Watermelon Iced Tea", price: "190", img: "", desc: "Light and refreshing tea mixed with fresh watermelon notes" },
+    { section: "beverages", cat: "Iced Tea", name: "Cranberry Iced Tea", price: "200", img: "", desc: "Tangy cranberry blended with chilled iced tea for a crisp finish" },
+    { section: "beverages", cat: "Iced Tea", name: "Orange Iced Tea", price: "200", img: "", desc: "Refreshing black tea infused with fresh, zesty orange flavor" },
+    { section: "beverages", cat: "Iced Tea", name: "Redbull Iced Tea", price: "200", img: "", desc: "Chilled beverage blending the energy of Red Bull with tea flavor" },
+
+    // ── INDIAN TEA ────────────────────────────────────────────
+    { section: "beverages", cat: "Indian Tea", name: "Lemon Grass Tea", price: "120", img: "", desc: "Soothing lemongrass infused tea" },
+    { section: "beverages", cat: "Indian Tea", name: "Mint Tulsi Tea", price: "100", img: "", desc: "Fresh mint and holy basil tea" },
+    { section: "beverages", cat: "Indian Tea", name: "Ginger Tea", price: "50", img: "", desc: "Classic spiced ginger tea" },
+    { section: "beverages", cat: "Indian Tea", name: "Masala Tea", price: "80", img: "", desc: "Traditional spiced Indian masala chai" },
+    { section: "beverages", cat: "Indian Tea", name: "Caramelised Tea", price: "120", img: "", desc: "Tea with a rich caramelised sweetness" },
+    { section: "beverages", cat: "Indian Tea", name: "Elaichi Tea", price: "150", img: "", desc: "Fragrant cardamom infused tea" },
+
+    // ── EUROPEAN TEA ──────────────────────────────────────────
+    { section: "beverages", cat: "European Tea", name: "Green Tea", price: "70", img: "", desc: "It's an antioxidant-rich beverage promoting metabolism, digestion, heart health, and overall wellness — blended with hot water" },
+    { section: "beverages", cat: "European Tea", name: "Lemon Ginger Tea", price: "180", img: "", desc: "Lemon ginger tea aids digestion, boosts immunity, relieves inflammation — blended with hot water" },
+    { section: "beverages", cat: "European Tea", name: "Egyptian Chamomile Tea", price: "120", img: "", desc: "Egyptian chamomile tea calms nerves, aids sleep, improves digestion — blended with hot water" },
+    { section: "beverages", cat: "European Tea", name: "Lemon Honey Tea", price: "120", img: "", desc: "Lemon honey tea boosts immunity, soothes throat — blended with hot water" },
+    { section: "beverages", cat: "European Tea", name: "English Breakfast Tea", price: "120", img: "", desc: "English Breakfast tea is strong, energizing, improves focus and alertness — blended with hot water" },
+    { section: "beverages", cat: "European Tea", name: "Green Mint Tea", price: "120", img: "", desc: "Green mint tea refreshes mind, aids digestion, boosts metabolism — blended with hot water" },
+
+    // ── NATURAL MILKSHAKES ────────────────────────────────────
+    { section: "beverages", cat: "Natural Milkshakes", name: "Ragi Milkshake", price: "210", img: "", desc: "Nutritious ragi based natural milkshake" },
+    { section: "beverages", cat: "Natural Milkshakes", name: "Turmeric Honey Milkshake", price: "260", img: "", desc: "Golden turmeric blended with natural honey" },
+    { section: "beverages", cat: "Natural Milkshakes", name: "Oats Banana Milkshake", price: "210", img: "", desc: "Wholesome oats blended with ripe banana" },
+    { section: "beverages", cat: "Natural Milkshakes", name: "Strawberry Milkshake", price: "230", img: "", desc: "Fresh strawberry blended milkshake" },
+    { section: "beverages", cat: "Natural Milkshakes", name: "Mix Berry Milkshake", price: "310", img: "", desc: "Blended mix of fresh seasonal berries" },
+    { section: "beverages", cat: "Natural Milkshakes", name: "Dry Fruit Milkshake", price: "310", img: "", desc: "Rich milkshake loaded with mixed dry fruits" },
+    { section: "beverages", cat: "Natural Milkshakes", name: "Makhana Milkshake", price: "260", img: "", desc: "Creamy makhana based natural milkshake" },
+    { section: "beverages", cat: "Natural Milkshakes", name: "Brownie Honey Milkshake", price: "260", img: "", desc: "Indulgent brownie and honey blended milkshake" },
 
     // ── SMOOTHIES ─────────────────────────────────────────────
     { section: "beverages", cat: "Smoothies", name: "Dates Oats", price: "300", img: "images/Date oats smoothie.jpg.jpeg", desc: "Soaked dates, milk/oat milk. Natural sweetness + slow-release carbs. (~320 kcal)" },
@@ -158,6 +248,10 @@ const menuData = [
     { section: "beverages", cat: "Smoothies", name: "Chocolate Oats Smoothie ⭐", price: "250", img: "images/Chocolate pats smoothie.jpg.jpeg", desc: "Oats, banana, unsweetened cocoa, milk/oat milk. No sugar, slow carbs. (~310 kcal)" },
     { section: "beverages", cat: "Smoothies", name: "Avocado Smoothie Bowl", price: "360", img: "images/Avocado smoothie.jpg.jpeg", desc: "Ripe avocado, banana, milk/oat milk, honey or dates, chia seeds. (~375 kcal)" },
     { section: "beverages", cat: "Smoothies", name: "Vegan Plant Protein Smoothie", price: "280", img: "images/Vegan plant protein smoothie.jpg.jpeg", desc: "Spinach, banana, milk/oat milk, peanut butter, chia seeds. (~307 kcal)" },
+
+    // ------------------------------------------------------------------------------------------------
+    // ---------------------------------------DESSERTS-------------------------------------------------
+    // ------------------------------------------------------------------------------------------------
 
     // ── MILLET PANCAKES ───────────────────────────────────────
     { section: "desserts", cat: "Millet Pancakes", name: "Classic Pancakes", price: "299", img: "images/Classic pancakes.jpg.jpeg", desc: "A classic preparation of millet based pancake" },
