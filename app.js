@@ -4,13 +4,17 @@ const landingScreen = document.getElementById('landing-screen');
 
 // ── Render a single menu card ────────────────────────────────────
 function renderCard(item, layout = 'horizontal') {
-    const imgSrc = `images/${item.name.toLowerCase().replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-')}.jpg`;
+    // ✅ Use exact img path if provided, else show placeholder
+    const imgSrc = item.img
+        ? item.img
+        : 'https://via.placeholder.com/150?text=Food';
 
     if (layout === 'vertical') {
         return `
             <div class="menu-card menu-card--vertical">
                 <img src="${imgSrc}" class="item-img--vertical" alt="${item.name}"
-                     onerror="this.src='https://via.placeholder.com/400x200?text=Food'" loading="lazy">
+                     onerror="this.src='https://via.placeholder.com/400x200?text=Food'"
+                     loading="lazy">
                 <div class="item-info">
                     <div class="item-header">
                         <p class="item-name">${item.name}</p>
@@ -32,7 +36,8 @@ function renderCard(item, layout = 'horizontal') {
                 <p class="item-desc">${item.desc}</p>
             </div>
             <img src="${imgSrc}" class="item-img" alt="${item.name}"
-                 onerror="this.src='https://via.placeholder.com/150?text=Food'" loading="lazy">
+                 onerror="this.style.display='none'"
+                 loading="lazy">
         </div>
     `;
 }
