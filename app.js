@@ -2,20 +2,6 @@ const container = document.getElementById('menu-container');
 const nav = document.getElementById('cat-nav');
 const landingScreen = document.getElementById('landing-screen');
 
-// ── Pizza sub-group mapping ──────────────────────────────────────
-const categorySubGroups = {
-    "Pizza": {
-        "Margherita":                  "Sourdough",
-        "Farmhouse":                   "Sourdough",
-        "Cheese N Corn":               "Sourdough",
-        "Mushroom Margherita":         "Sourdough",
-        "Indi Tandoori Paneer 🌶️":     "Sourdough",
-        "TTR Tomato Basil Crisp":      "TTR Special Crisp ⭐",
-        "TTR Veggie Exotic Crisp":     "TTR Special Crisp ⭐",
-        "TTR Makhani Paneer Crisp ⭐": "TTR Special Crisp ⭐",
-    }
-};
-
 // ── Render a single menu card ────────────────────────────────────
 function renderCard(item, layout = 'horizontal') {
     const imgSrc = item.img
@@ -84,34 +70,14 @@ function renderRemainingSteps(steps) {
     return html;
 }
 
-// ── Render items with optional sub-group dividers ────────────────
+// ── Render items ─────────────────────────────────────────────────
 function renderItems(cat, items, layout = 'horizontal') {
     let html = '';
-    let lastSubGroup = null;
-
     items.forEach(item => {
-        const subGroup = categorySubGroups[cat]?.[item.name];
-
-        if (subGroup && subGroup !== lastSubGroup) {
-            // ── Sub-group heading row with price labels ──────────
-            const isSubGroupWithPrices = cat === 'Pizza';
-            html += `
-                <div class="sub-group-row">
-                    <div class="sub-group-label">${subGroup}</div>
-                    ${isSubGroupWithPrices
-                        ? `<div class="price-label"><span>Regular</span><span>Medium</span></div>`
-                        : ''}
-                </div>
-            `;
-            lastSubGroup = subGroup;
-        }
-
         html += renderCard(item, layout);
     });
-
     return html;
 }
-
 
 // ── Build full menu for a given section id ───────────────────────
 function buildMenu(sectionId) {
@@ -152,32 +118,43 @@ function buildMenu(sectionId) {
             section.innerHTML = `<h2>${cat}</h2>`;
         }
 
-        // Bowl steps + vertical cards OR sub-grouped horizontal cards
+        // Bowl steps + vertical cards OR regular horizontal cards
+        // Bowl steps + vertical cards OR regular horizontal cards
         if (categorySteps[cat]) {
             const stepsData = categorySteps[cat];
+
+            // ✅ Note ABOVE steps for bowl categories
+            if (categoryNotes[cat]) {
+                section.innerHTML += `<div class="footer-note">${categoryNotes[cat]}</div>`;
+            }
+
             section.innerHTML += `
-                <div class="bowl-steps">
-                    <p class="bowl-intro">${stepsData.intro}</p>
-                    <div class="step-block">
-                        <div class="step-header">
-                            <span class="step-number">${stepsData.steps[0].number}</span>
-                            <span class="step-title">${stepsData.steps[0].title}</span>
-                        </div>
-                    </div>
+        <div class="bowl-steps">
+            <p class="bowl-intro">${stepsData.intro}</p>
+            <div class="step-block">
+                <div class="step-header">
+                    <span class="step-number">${stepsData.steps[0].number}</span>
+                    <span class="step-title">${stepsData.steps[0].title}</span>
                 </div>
-            `;
+            </div>
+        </div>
+    `;
             section.innerHTML += renderItems(cat, grouped[cat], 'vertical');
             section.innerHTML += renderRemainingSteps(stepsData.steps.slice(1));
+
         } else {
+            // ✅ Note ABOVE items for all other categories
+            if (categoryNotes[cat]) {
+                section.innerHTML += `<div class="footer-note">${categoryNotes[cat]}</div>`;
+            }
             section.innerHTML += renderItems(cat, grouped[cat], 'horizontal');
         }
 
-        // Footer note
-        if (categoryNotes[cat]) {
-            section.innerHTML += `<div class="footer-note">${categoryNotes[cat]}</div>`;
-        }
+        container.appendChild(section);
+
 
         container.appendChild(section);
+
     });
 
     adjustLayout();

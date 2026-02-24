@@ -101,12 +101,12 @@ const menuData = [
     { section: "food", cat: "Moonglet", name: "Paneer Moonglet ⭐", price: "180", img: "images/Paneer Moonglet.jpg.jpeg", desc: "Moong dal filled with fresh in-house paneer and organic spices" },
 
     // ── SANDWICH ──────────────────────────────────────────────
-    { section: "food", cat: "Sandwich", name: "Coleslaw Sandwich", price: "120", img: "images/Cole-slaw sandwich.jpg.jpeg", desc: "Multigrain bread with loaded fresh cucumber, carrot, infused with in-house cheese sauce" },
-    { section: "food", cat: "Sandwich", name: "Hummus Sandwich", price: "199", img: "", desc: "In-house fresh hummus served with a tomato twist on multigrain bread" },
-    { section: "food", cat: "Sandwich", name: "Bombay Sandwich", price: "210", img: "", desc: "Indian twist spices with potato, onion & tomato served with grilled multigrain bread" },
-    { section: "food", cat: "Sandwich", name: "Paneer Tandoori Sandwich ⭐", price: "220", img: "", desc: "In-house tandoori sauce filled with paneer served with multigrain bread" },
-    { section: "food", cat: "Sandwich", name: "Tandoori Soya Sandwich", price: "199", img: "", desc: "Multigrain sandwich with in-house cheese sauce, lettuce, tomato, and cucumber" },
-    { section: "food", cat: "Sandwich", name: "Classic Grilled Sandwich", price: "120", img: "images/All other sandwich.jpg.jpeg", desc: "Grilled multigrain sandwich with in-house cheese sauce and fresh veggies" },
+    { section: "food", cat: "Sandwich", name: "Coleslaw Sandwich", price: "120", img: "images/sandwiches/Coleslaw_sandwitch.jpeg", desc: "Multigrain bread with loaded fresh cucumber, carrot, infused with in-house cheese sauce" },
+    { section: "food", cat: "Sandwich", name: "Hummus Sandwich", price: "199", img: "images/sandwiches/Hummus_sandwitch.jpeg", desc: "In-house fresh hummus served with a tomato twist on multigrain bread" },
+    { section: "food", cat: "Sandwich", name: "Bombay Sandwich", price: "210", img: "images/sandwiches/Bombay_sandwitch.jpeg", desc: "Indian twist spices with potato, onion & tomato served with grilled multigrain bread" },
+    { section: "food", cat: "Sandwich", name: "Paneer Tandoori Sandwich ⭐", price: "220", img: "images/sandwiches/Paneer_tandoori_sandwitch.jpeg", desc: "In-house tandoori sauce filled with paneer served with multigrain bread" },
+    { section: "food", cat: "Sandwich", name: "Tandoori Soya Sandwich", price: "199", img: "images/sandwiches/Tandoori_soya.jpeg", desc: "Multigrain sandwich with in-house cheese sauce, lettuce, tomato, and cucumber" },
+    { section: "food", cat: "Sandwich", name: "Classic Grilled Sandwich", price: "120", img: "images/sandwiches/Classic_grilled.jpeg", desc: "Grilled multigrain sandwich with in-house cheese sauce and fresh veggies" },
 
     // ── FRENCH FRIES ──────────────────────────────────────────
     { section: "food", cat: "French Fries", name: "Classic Salted French Fries", price: "120", img: "images/Classic salted French fries.jpg.jpeg", desc: "Classic fries seasoned with salt" },
@@ -141,16 +141,16 @@ const menuData = [
     // ------------------------------------------------------------------------------------------------
     // ---------------------------------------BEVERAGES------------------------------------------------
     // ------------------------------------------------------------------------------------------------
-    
-    
-    // ── HOT COFFEE (BLACK) ────────────────────────────────────
-    { section: "beverages", cat: "Hot Coffee (Black)", name: "Bullet Coffee", price: "120", img: "", desc: "Americano with cow ghee" },
-    { section: "beverages", cat: "Hot Coffee (Black)", name: "Espresso", price: "100", img: "", desc: "Rich full bodied shot of pure coffee" },
-    { section: "beverages", cat: "Hot Coffee (Black)", name: "Long Espresso", price: "120", img: "", desc: "Long/double shot espresso" },
-    { section: "beverages", cat: "Hot Coffee (Black)", name: "Americano", price: "120", img: "", desc: "Espresso diluted with hot water for a smoother taste" },
-    { section: "beverages", cat: "Hot Coffee (Black)", name: "Macchiato", price: "100", img: "", desc: "Espresso topped with foamed milk" },
-    { section: "beverages", cat: "Hot Coffee (Black)", name: "Irish Coffee", price: "160", img: "", desc: "A rich, warm blend of coffee, Irish whiskey, and cream" },
-    { section: "beverages", cat: "Hot Coffee (Black)", name: "Vietnamese Black", price: "170", img: "", desc: "Strong, bold, intense, dark-roasted robusta flavor, high caffeine" },
+
+
+        // ── HOT COFFEE (BLACK) ────────────────────────────────────
+    { section: "beverages", cat: "Hot Coffee (Black)", name: "Bullet Coffee", price: "120", img: "images/beverages/Bullet coffee.jpeg", desc: "Americano with cow ghee" },
+    { section: "beverages", cat: "Hot Coffee (Black)", name: "Espresso", price: "100", img: "images/beverages/espresso.jpeg", desc: "Rich full bodied shot of pure coffee" },
+    { section: "beverages", cat: "Hot Coffee (Black)", name: "Long Espresso", price: "120", img: "images/beverages/long espresso.jpeg", desc: "Long/double shot espresso" },
+    { section: "beverages", cat: "Hot Coffee (Black)", name: "Americano", price: "120", img: "images/beverages/american.jpeg", desc: "Espresso diluted with hot water for a smoother taste" },
+    { section: "beverages", cat: "Hot Coffee (Black)", name: "Macchiato", price: "100", img: "images/beverages/macchiato.jpeg", desc: "Espresso topped with foamed milk" },
+    { section: "beverages", cat: "Hot Coffee (Black)", name: "Irish Coffee", price: "160", img: "images/beverages/irish coffee.jpeg", desc: "A rich, warm blend of coffee, Irish whiskey, and cream" },
+    { section: "beverages", cat: "Hot Coffee (Black)", name: "Vietnamese Black", price: "170", img: "images/beverages/veitnamese black.jpeg", desc: "Strong, bold, intense, dark-roasted, robusta flavor, high caffeine" },
 
     // ── HOT COFFEE (WHITE) ────────────────────────────────────
     { section: "beverages", cat: "Hot Coffee (White)", name: "Cappuccino", price: "150", img: "", desc: "Espresso topped with steamed milk and a thick layer of foam" },
@@ -163,19 +163,19 @@ const menuData = [
     { section: "beverages", cat: "Hot Coffee (White)", name: "Chilli Cinnamon Latte", price: "190", img: "", desc: "Smooth espresso with steamed milk, cinnamon & light foam" },
     { section: "beverages", cat: "Hot Coffee (White)", name: "Hot Chocolate", price: "199", img: "", desc: "Classic creamy cocoa" },
     { section: "beverages", cat: "Hot Coffee (White)", name: "Nutella Hot Chocolate", price: "220", img: "", desc: "Classic creamy cocoa with Nutella" },
-    { section: "beverages", cat: "Hot Coffee (White)", name: "Vietnamese White", price: "200", img: "", desc: "Light-roast coffee, creamy, sweet, smooth" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "Vietnamese White", price: "200", img: "images/beverages/iced veitnamese white.jpeg", desc: "Light-roast coffee, creamy, sweet, smooth" },
 
     // ── ICED COFFEE ───────────────────────────────────────────
-    { section: "beverages", cat: "Iced Coffee", name: "Iced Americano", price: "125", img: "", desc: "Chilled espresso diluted with cold water" },
-    { section: "beverages", cat: "Iced Coffee", name: "Iced Cappuccino", price: "155", img: "", desc: "Chilled espresso with cold milk and foam" },
-    { section: "beverages", cat: "Iced Coffee", name: "Iced Mocha", price: "170", img: "", desc: "Iced espresso with dark chocolate and milk" },
-    { section: "beverages", cat: "Iced Coffee", name: "Iced Latte", price: "160", img: "", desc: "Smooth espresso over ice with cold milk" },
-    { section: "beverages", cat: "Iced Coffee", name: "Iced Hazelnut Latte", price: "180", img: "", desc: "Espresso with hazelnut syrup over ice" },
+    { section: "beverages", cat: "Iced Coffee", name: "Iced Americano", price: "125", img: "images/beverages/iced americano.jpeg", desc: "Chilled espresso diluted with cold water" },
+    { section: "beverages", cat: "Iced Coffee", name: "Iced Cappuccino", price: "155", img: "images/beverages/iced cappucino.jpeg", desc: "Chilled espresso with cold milk and foam" },
+    { section: "beverages", cat: "Iced Coffee", name: "Iced Mocha", price: "170", img: "images/beverages/iced mocha.jpeg", desc: "Iced espresso with dark chocolate and milk" },
+    { section: "beverages", cat: "Iced Coffee", name: "Iced Latte", price: "160", img: "images/beverages/iced latte.jpeg", desc: "Smooth espresso over ice with cold milk" },
+    { section: "beverages", cat: "Iced Coffee", name: "Iced Hazelnut Latte", price: "180", img: "images/beverages/iced hazelnut latte.jpeg", desc: "Espresso with hazelnut syrup over ice" },
     { section: "beverages", cat: "Iced Coffee", name: "Iced Biscoff Latte", price: "200", img: "", desc: "Lotus biscoff espresso served over ice" },
     { section: "beverages", cat: "Iced Coffee", name: "Iced Vietnamese Black", price: "170", img: "", desc: "Strong dark-roasted robusta poured over ice" },
-    { section: "beverages", cat: "Iced Coffee", name: "Iced Vietnamese White", price: "200", img: "", desc: "Creamy light-roast coffee served cold" },
-    { section: "beverages", cat: "Iced Coffee", name: "Oreo Coffee", price: "200", img: "", desc: "Cold coffee blended with Oreo" },
-    { section: "beverages", cat: "Iced Coffee", name: "Coffee Tornado", price: "220", img: "", desc: "Swirling iced coffee blend" },
+    { section: "beverages", cat: "Iced Coffee", name: "Iced Vietnamese White", price: "200", img: "images/beverages/iced veitnamese white.jpeg", desc: "Creamy light-roast coffee served cold" },
+    { section: "beverages", cat: "Iced Coffee", name: "Oreo Coffee", price: "200", img: "images/beverages/oreo coffee.jpeg", desc: "Cold coffee blended with Oreo" },
+    { section: "beverages", cat: "Iced Coffee", name: "Coffee Tornado", price: "220", img: "", desc: "A swirling iced coffee blend" },
 
     // ── FRAPPE ────────────────────────────────────────────────
     { section: "beverages", cat: "Frappe", name: "Signature Frappe", price: "200", img: "", desc: "TTR's signature blended coffee frappe" },
@@ -191,7 +191,7 @@ const menuData = [
     { section: "beverages", cat: "Signatures", name: "Espresso Tonic", price: "230", img: "", desc: "Iced espresso with tonic water" },
     { section: "beverages", cat: "Signatures", name: "Coffee Punch", price: "199", img: "", desc: "Iced espresso with orange & cranberry juice" },
     { section: "beverages", cat: "Signatures", name: "Affogato", price: "180", img: "", desc: "Espresso poured over vanilla ice cream" },
-    { section: "beverages", cat: "Signatures", name: "Detox", price: "180", img: "", desc: "Espresso with ginger and ice" },
+    { section: "beverages", cat: "Signatures", name: "Detox", price: "180", img: "", desc: "Espresso with ginger ace & ice" },
 
     // ── MANUAL BREWS ──────────────────────────────────────────
     { section: "beverages", cat: "Manual Brews", name: "Whiskey Barrel", price: "199", img: "", desc: "Whiskey barrel processed specialty coffee brew" },
@@ -237,7 +237,7 @@ const menuData = [
     { section: "beverages", cat: "Natural Milkshakes", name: "Oats Banana Milkshake", price: "210", img: "", desc: "Wholesome oats blended with ripe banana" },
     { section: "beverages", cat: "Natural Milkshakes", name: "Strawberry Milkshake", price: "230", img: "", desc: "Fresh strawberry blended milkshake" },
     { section: "beverages", cat: "Natural Milkshakes", name: "Mix Berry Milkshake", price: "310", img: "", desc: "Blended mix of fresh seasonal berries" },
-    { section: "beverages", cat: "Natural Milkshakes", name: "Dry Fruit Milkshake", price: "310", img: "", desc: "Rich milkshake loaded with mixed dry fruits" },
+    { section: "beverages", cat: "Natural Milkshakes", name: "Dry Fruit Milkshake", price: "310", img: "images/beverages/dryfruit milkshake.jpeg", desc: "Rich milkshake loaded with mixed dry fruits" },
     { section: "beverages", cat: "Natural Milkshakes", name: "Makhana Milkshake", price: "260", img: "", desc: "Creamy makhana based natural milkshake" },
     { section: "beverages", cat: "Natural Milkshakes", name: "Brownie Honey Milkshake", price: "260", img: "", desc: "Indulgent brownie and honey blended milkshake" },
 
@@ -246,7 +246,7 @@ const menuData = [
     { section: "beverages", cat: "Smoothies", name: "Banana Peanut Butter", price: "260", img: "images/Banana peanut butter.jpg.jpeg", desc: "Banana, natural peanut butter, milk/oat milk, chia seeds. No added sugar. (~350 kcal)" },
     { section: "beverages", cat: "Smoothies", name: "Coffee Banana Energy ⭐", price: "399", img: "images/Coffee banana smoothie.jpg.jpeg", desc: "Banana, chilled brewed coffee, milk/oat milk, cocoa powder. Natural caffeine + potassium. (~260 kcal)" },
     { section: "beverages", cat: "Smoothies", name: "Chocolate Oats Smoothie ⭐", price: "250", img: "images/Chocolate pats smoothie.jpg.jpeg", desc: "Oats, banana, unsweetened cocoa, milk/oat milk. No sugar, slow carbs. (~310 kcal)" },
-    { section: "beverages", cat: "Smoothies", name: "Avocado Smoothie Bowl", price: "360", img: "images/Avocado smoothie.jpg.jpeg", desc: "Ripe avocado, banana, milk/oat milk, honey or dates, chia seeds. (~375 kcal)" },
+    { section: "beverages", cat: "Smoothies", name: "Avocado Smoothie Bowl", price: "360", img: "images/Avocado smoothie.jpg.jpeg", desc: "Ripe avocado, banana, milk/oat milk, honey or dates, iced seeds. (~375 kcal)" },
     { section: "beverages", cat: "Smoothies", name: "Vegan Plant Protein Smoothie", price: "280", img: "images/Vegan plant protein smoothie.jpg.jpeg", desc: "Spinach, banana, milk/oat milk, peanut butter, chia seeds. (~307 kcal)" },
 
     // ------------------------------------------------------------------------------------------------
@@ -308,5 +308,7 @@ const categorySteps = {
 // ── Category footer notes ────────────────────────────────────────
 const categoryNotes = {
     "Paratha Bowls": "<strong>Every bite is filled with:</strong> Lettuce, bell peppers, pickled veggies, jalapeños, olives, smoky burnt garlic, onion chutney, peanut chutney, cheese sauce & imli chutney — flavour-packed, organic & complementary.",
-    "Rice Bowls": "<strong>Every bite is filled with:</strong> Organic boiled moong, fresh lettuce, sauté bell pepper, falafel tikki, papad, sautéed vegetables, masala ring onions & basil — garnished with dry fruits & paired with makhni and coconut gravy."
+    "Rice Bowls": "<strong>Every bite is filled with:</strong> Organic boiled moong, fresh lettuce, sauté bell pepper, falafel tikki, papad, sautéed vegetables, masala ring onions & basil — garnished with dry fruits & paired with makhni and coconut gravy.",
+    "Pizza": "🍕 Boths Bases (Sourdough and wheat) available in Regular crust and Thin crust (papad-like crunch). Prices shown as Regular / Medium. <strong>Extra cheese ₹50/-</strong>"
 };
+
