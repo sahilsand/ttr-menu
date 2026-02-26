@@ -104,7 +104,7 @@ const menuData = [
     { section: "food", cat: "Sandwich", name: "Coleslaw Sandwich", price: "120", img: "images/sandwiches/Coleslaw_sandwitch.jpeg", desc: "Multigrain bread with loaded fresh cucumber, carrot, infused with in-house cheese sauce" },
     { section: "food", cat: "Sandwich", name: "Hummus Sandwich", price: "199", img: "images/sandwiches/Hummus_sandwitch.jpeg", desc: "In-house fresh hummus served with a tomato twist on multigrain bread" },
     { section: "food", cat: "Sandwich", name: "Bombay Sandwich", price: "210", img: "images/sandwiches/Bombay_sandwitch.jpeg", desc: "Indian twist spices with potato, onion & tomato served with grilled multigrain bread" },
-    { section: "food", cat: "Sandwich", name: "Paneer Tandoori Sandwich ⭐", price: "220", img: "images/sandwiches/Paneer_tandoori_sandwitch.jpeg", desc: "In-house tandoori sauce filled with paneer served with multigrain bread" },
+    { section: "food", cat: "Sandwich", name: "Paneer Tandoori Sandwich ⭐", price: "220", img: "images/sandwiches/Paneer tandoori sandwitch.jpeg", desc: "In-house tandoori sauce filled with paneer served with multigrain bread" },
     { section: "food", cat: "Sandwich", name: "Tandoori Soya Sandwich", price: "199", img: "images/sandwiches/Tandoori_soya.jpeg", desc: "Multigrain sandwich with in-house cheese sauce, lettuce, tomato, and cucumber" },
     { section: "food", cat: "Sandwich", name: "Classic Grilled Sandwich", price: "120", img: "images/sandwiches/Classic_grilled.jpeg", desc: "Grilled multigrain sandwich with in-house cheese sauce and fresh veggies" },
 
@@ -308,6 +308,16 @@ const categorySteps = {
 const categoryNotes = {
     "Paratha Bowls": "<strong>Every bite is filled with:</strong> Lettuce, bell peppers, pickled veggies, jalapeños, olives, smoky burnt garlic, onion chutney, peanut chutney, cheese sauce & imli chutney — flavour-packed, organic & complementary.",
     "Rice Bowls": "<strong>Every bite is filled with:</strong> Organic boiled moong, fresh lettuce, sauté bell pepper, falafel tikki, papad, sautéed vegetables, masala ring onions & basil — garnished with dry fruits & paired with makhni and coconut gravy.",
-    "Pizza": "🍕 Boths Bases (Sourdough and wheat) available in Regular crust and Thin crust (papad-like crunch). Prices shown as Regular / Medium. <strong>Extra cheese ₹50/-</strong>"
+    "Pizza": `
+        <div class="pizza-note">
+            <h3>🍕 100% Wheat Sourdough Pizzas</h3>
+            <p>Crafted with naturally fermented dough for better digestion & richer flavour.</p>
+            <p><strong>Choose Your Base:</strong></p>
+            <p>🥖 <strong>Classic Sourdough</strong> – Soft, airy & satisfying</p>
+            <p>🔥 <strong>Thin Crust Sourdough</strong> – Crispy, light & papad-thin crunch</p>
+            <p>📏 Available in <strong>Regular & Medium</strong></p>
+            <p>🧀 Upgrade it with <strong>Extra Cheese @ ₹50 only</strong></p>
+        </div>
+    `
 };
 
