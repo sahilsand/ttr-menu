@@ -114,15 +114,15 @@ const menuData = [
     { section: "food", cat: "French Fries", name: "Cheese Mexican Fries", price: "210", img: "images/Cheese Mexican fries.jpg.jpeg", desc: "Fries served with in-house cheese sauce" },
     { section: "food", cat: "French Fries", name: "Schezwan French Fries", price: "190", img: "images/Schezwan French fries.jpg.jpeg", desc: "Fries seasoned with spicy schezwan sauce" },
 
-    // ── MUNCHIES ──────────────────────────────────────────────
-    { section: "food", cat: "Munchies", name: "Millet Nacho Bhel ⭐", price: "260", img: "images/Millet nacho bhel.jpg.jpeg", desc: "Millet Nachos with in-house fresh cheese sauce and Salsa" },
-    { section: "food", cat: "Munchies", name: "European Paneer Pakoda", price: "250", img: "images/European paneer pakoda.jpg.jpeg", desc: "Stuffed with spicy Thai green paste, sourdough coated, lightly fried in organic peanut oil" },
-    { section: "food", cat: "Munchies", name: "Indo-European Chola Bhatura ⭐", price: "140", img: "images/Info European chola bhatura.jpg.jpeg", desc: "Mini pleasure with hummus and in-house sauces with freshly made chola" },
-    { section: "food", cat: "Munchies", name: "Chilli Paneer Dry", price: "190", img: "images/Chilli paneer dry.jpg.jpeg", desc: "Classic preparation of paneer with sauces" },
-    { section: "food", cat: "Munchies", name: "Chilli Ragi Manchurian Dry", price: "170", img: "images/Ragi Manchurian dry.jpg.jpeg", desc: "Classic preparation of ragi manchurian with sauces" },
-    { section: "food", cat: "Munchies", name: "Onion Rings ⭐", price: "150", img: "images/Onion rings.jpg.jpeg", desc: "Sourdough coated onion rings, lightly fried in organic peanut oil" },
-    { section: "food", cat: "Munchies", name: "Exotic Veg Crunch", price: "180", img: "images/Veggie exotic toast.jpg.jpeg", desc: "Seasonal exotic veggies, sourdough coated, lightly fried in organic peanut oil" },
-    { section: "food", cat: "Munchies", name: "Crispy Mushroom", price: "160", img: "images/Crispy mushroom.jpg.jpeg", desc: "Fresh mushrooms, sourdough coated, lightly fried in organic peanut oil" },
+    // ── APPETIZERS ──────────────────────────────────────────────
+    { section: "food", cat: "Appetizers", name: "Millet Nacho Bhel ⭐", price: "260", img: "images/Millet nacho bhel.jpg.jpeg", desc: "Millet Nachos with in-house fresh cheese sauce and Salsa" },
+    { section: "food", cat: "Appetizers", name: "European Paneer Pakoda", price: "250", img: "images/European paneer pakoda.jpg.jpeg", desc: "Stuffed with spicy Thai green paste, sourdough coated, lightly fried in organic peanut oil" },
+    { section: "food", cat: "Appetizers", name: "Indo-European Chola Bhatura ⭐", price: "140", img: "images/Info European chola bhatura.jpg.jpeg", desc: "Mini pleasure with hummus and in-house sauces with freshly made chola" },
+    { section: "food", cat: "Appetizers", name: "Chilli Paneer Dry", price: "190", img: "images/Chilli paneer dry.jpg.jpeg", desc: "Classic preparation of paneer with sauces" },
+    { section: "food", cat: "Appetizers", name: "Chilli Ragi Manchurian Dry", price: "170", img: "images/Ragi Manchurian dry.jpg.jpeg", desc: "Classic preparation of ragi manchurian with sauces" },
+    { section: "food", cat: "Appetizers", name: "Onion Rings ⭐", price: "150", img: "images/Onion rings.jpg.jpeg", desc: "Sourdough coated onion rings, lightly fried in organic peanut oil" },
+    { section: "food", cat: "Appetizers", name: "Exotic Veg Crunch", price: "180", img: "images/Veggie exotic toast.jpg.jpeg", desc: "Seasonal exotic veggies, sourdough coated, lightly fried in organic peanut oil" },
+    { section: "food", cat: "Appetizers", name: "Crispy Mushroom", price: "160", img: "images/Crispy mushroom.jpg.jpeg", desc: "Fresh mushrooms, sourdough coated, lightly fried in organic peanut oil" },
 
     // ── TOASTS ────────────────────────────────────────────────
     { section: "food", cat: "Toasts", name: "Chilli Mushroom Toast", price: "290", img: "images/Chilli mushroom toast.jpg.jpeg", desc: "Sliced mushrooms baked in spicy in-house sauce served on sourdough" },
