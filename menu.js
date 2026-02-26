@@ -142,7 +142,6 @@ const menuData = [
     // ---------------------------------------BEVERAGES------------------------------------------------
     // ------------------------------------------------------------------------------------------------
 
-
         // ── HOT COFFEE (BLACK) ────────────────────────────────────
     { section: "beverages", cat: "Hot Coffee (Black)", name: "Bullet Coffee", price: "120", img: "images/beverages/Bullet coffee.jpeg", desc: "Americano with cow ghee" },
     { section: "beverages", cat: "Hot Coffee (Black)", name: "Espresso", price: "100", img: "images/beverages/espresso.jpeg", desc: "Rich full bodied shot of pure coffee" },
@@ -159,11 +158,11 @@ const menuData = [
     { section: "beverages", cat: "Hot Coffee (White)", name: "Cortado (Hot/Ice)", price: "150", img: "", desc: "Espresso with equal amount of milk" },
     { section: "beverages", cat: "Hot Coffee (White)", name: "Cafe Mocha", price: "170", img: "", desc: "Espresso with rich dark chocolate & steamed milk" },
     { section: "beverages", cat: "Hot Coffee (White)", name: "White Mocha", price: "170", img: "", desc: "Espresso with rich white chocolate & steamed milk" },
-    { section: "beverages", cat: "Hot Coffee (White)", name: "Biscoff Latte", price: "190", img: "", desc: "Lotus biscoff & espresso with thin layered frothed milk" },
-    { section: "beverages", cat: "Hot Coffee (White)", name: "Chilli Cinnamon Latte", price: "190", img: "", desc: "Smooth espresso with steamed milk, cinnamon & light foam" },
-    { section: "beverages", cat: "Hot Coffee (White)", name: "Hot Chocolate", price: "199", img: "", desc: "Classic creamy cocoa" },
-    { section: "beverages", cat: "Hot Coffee (White)", name: "Nutella Hot Chocolate", price: "220", img: "", desc: "Classic creamy cocoa with Nutella" },
-    { section: "beverages", cat: "Hot Coffee (White)", name: "Vietnamese White", price: "200", img: "images/beverages/iced veitnamese white.jpeg", desc: "Light-roast coffee, creamy, sweet, smooth" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "Biscoff Latte", price: "190", img: "images/beverages/Biscoff latte.jpeg", desc: "Lotus biscoff & espresso with thin layered frothed milk" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "Chilli Cinnamon Latte", price: "190", img: "images/beverages/Chilli cinemon latte.jpeg", desc: "Smooth espresso with steamed milk, cinnamon & light foam" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "Hot Chocolate", price: "199", img: "images/beverages/Hot chocolate.jpeg", desc: "Classic creamy cocoa" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "Nutella Hot Chocolate", price: "220", img: "images/beverages/nutella hot chocolate.jpeg", desc: "Classic creamy cocoa with Nutella" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "Vietnamese White", price: "200", img: "images/beverages/Veitnamese white.jpeg", desc: "Light-roast coffee, creamy, sweet, smooth" },
 
     // ── ICED COFFEE ───────────────────────────────────────────
     { section: "beverages", cat: "Iced Coffee", name: "Iced Americano", price: "125", img: "images/beverages/iced americano.jpeg", desc: "Chilled espresso diluted with cold water" },
@@ -178,20 +177,20 @@ const menuData = [
     { section: "beverages", cat: "Iced Coffee", name: "Coffee Tornado", price: "220", img: "", desc: "A swirling iced coffee blend" },
 
     // ── FRAPPE ────────────────────────────────────────────────
-    { section: "beverages", cat: "Frappe", name: "Signature Frappe", price: "200", img: "", desc: "TTR's signature blended coffee frappe" },
-    { section: "beverages", cat: "Frappe", name: "Mocha Frappe", price: "230", img: "", desc: "Rich chocolate and coffee blended frappe" },
-    { section: "beverages", cat: "Frappe", name: "Choco Chip Frappe", price: "230", img: "", desc: "Blended coffee frappe with chocolate chips" },
-    { section: "beverages", cat: "Frappe", name: "Tiramisu Frappe", price: "240", img: "", desc: "Creamy frappe with rich tiramisu flavor" },
-    { section: "beverages", cat: "Frappe", name: "Hazelnut Frappe", price: "240", img: "", desc: "Smooth blended coffee with hazelnut" },
+    { section: "beverages", cat: "Frappe", name: "Signature Frappe", price: "200", img: "images/beverages/signature frappe.jpeg", desc: "TTR's signature blended coffee frappe" },
+    { section: "beverages", cat: "Frappe", name: "Mocha Frappe", price: "230", img: "images/beverages/mocha frappe.jpeg", desc: "Rich chocolate and coffee blended frappe" },
+    { section: "beverages", cat: "Frappe", name: "Choco Chip Frappe", price: "230", img: "images/beverages/choco chip frappe.jpeg", desc: "Blended coffee frappe with chocolate chips" },
+    { section: "beverages", cat: "Frappe", name: "Tiramisu Frappe", price: "240", img: "images/beverages/Tiramusu frappe.jpeg", desc: "Creamy frappe with rich tiramisu flavor" },
+    { section: "beverages", cat: "Frappe", name: "Hazelnut Frappe", price: "240", img: "images/beverages/hazelnut frappe.jpeg", desc: "Smooth blended coffee with hazelnut" },
     { section: "beverages", cat: "Frappe", name: "Biscoff Frappe", price: "250", img: "", desc: "Blended frappe with lotus biscoff flavor" },
-    { section: "beverages", cat: "Frappe", name: "Nutella Almond Frappe", price: "280", img: "", desc: "Indulgent Nutella and almond blended frappe" },
-    { section: "beverages", cat: "Frappe", name: "Caramel Frappe", price: "250", img: "", desc: "Smooth blended frappe with rich caramel" },
+    { section: "beverages", cat: "Frappe", name: "Nutella Almond Frappe", price: "280", img: "images/beverages/nutella almond frappe.jpeg", desc: "Indulgent Nutella and almond blended frappe" },
+    { section: "beverages", cat: "Frappe", name: "Caramel Frappe", price: "250", img: "images/beverages/caramel frappe.jpeg", desc: "Smooth blended frappe with rich caramel" },
 
     // ── SIGNATURES ────────────────────────────────────────────
-    { section: "beverages", cat: "Signatures", name: "Espresso Tonic", price: "230", img: "", desc: "Iced espresso with tonic water" },
+    { section: "beverages", cat: "Signatures", name: "Espresso Tonic", price: "230", img: "images/beverages/espresso tonic.jpeg", desc: "Iced espresso with tonic water" },
     { section: "beverages", cat: "Signatures", name: "Coffee Punch", price: "199", img: "", desc: "Iced espresso with orange & cranberry juice" },
-    { section: "beverages", cat: "Signatures", name: "Affogato", price: "180", img: "", desc: "Espresso poured over vanilla ice cream" },
-    { section: "beverages", cat: "Signatures", name: "Detox", price: "180", img: "", desc: "Espresso with ginger ace & ice" },
+    { section: "beverages", cat: "Signatures", name: "Affogato", price: "180", img: "images/beverages/affogato.jpeg", desc: "Espresso poured over vanilla ice cream" },
+    { section: "beverages", cat: "Signatures", name: "Detox", price: "180", img: "", desc: "Espresso with ginger & ice" },
 
     // ── MANUAL BREWS ──────────────────────────────────────────
     { section: "beverages", cat: "Manual Brews", name: "Whiskey Barrel", price: "199", img: "", desc: "Whiskey barrel processed specialty coffee brew" },
@@ -200,9 +199,9 @@ const menuData = [
     { section: "beverages", cat: "Manual Brews", name: "Honey Sun-dried", price: "170", img: "", desc: "Honey sun-dried processed specialty coffee brew" },
 
     // ── MOCKTAILS ─────────────────────────────────────────────
-    { section: "beverages", cat: "Mocktails", name: "Classic Mojito", price: "180", img: "", desc: "Refreshing mint, lime and soda blended for a crisp, cool drink" },
-    { section: "beverages", cat: "Mocktails", name: "Strawberry Mojito", price: "180", img: "", desc: "Fresh strawberries mixed with mint & lime for a fruity twist" },
-    { section: "beverages", cat: "Mocktails", name: "Watermelon Mojito", price: "180", img: "", desc: "Chilled watermelon infused with mint and lime for a light, summery sip" },
+    { section: "beverages", cat: "Mocktails", name: "Classic Mojito", price: "180", img: "images/beverages/classic mojito.jpeg", desc: "Refreshing mint, lime and soda blended for a crisp, cool drink" },
+    { section: "beverages", cat: "Mocktails", name: "Strawberry Mojito", price: "180", img: "images/beverages/strawberry mojito.jpeg", desc: "Fresh strawberries mixed with mint & lime for a fruity twist" },
+    { section: "beverages", cat: "Mocktails", name: "Watermelon Mojito", price: "180", img: "images/beverages/Watermelon mojito.jpeg", desc: "Chilled watermelon infused with mint and lime for a light, summery sip" },
     { section: "beverages", cat: "Mocktails", name: "Fresh Lime Soda", price: "150", img: "", desc: "Zesty lime with soda, served sweet, salty or balanced" },
     { section: "beverages", cat: "Mocktails", name: "Spiced Guava", price: "180", img: "", desc: "Sweet guava juice with a dash of chilli & masala for a tangy kick" },
     { section: "beverages", cat: "Mocktails", name: "Sparkling Vanilla", price: "150", img: "", desc: "Fizzy soda infused with smooth aromatic vanilla" },
@@ -246,9 +245,9 @@ const menuData = [
     { section: "beverages", cat: "Smoothies", name: "Banana Peanut Butter", price: "260", img: "images/Banana peanut butter.jpg.jpeg", desc: "Banana, natural peanut butter, milk/oat milk, chia seeds. No added sugar. (~350 kcal)" },
     { section: "beverages", cat: "Smoothies", name: "Coffee Banana Energy ⭐", price: "399", img: "images/Coffee banana smoothie.jpg.jpeg", desc: "Banana, chilled brewed coffee, milk/oat milk, cocoa powder. Natural caffeine + potassium. (~260 kcal)" },
     { section: "beverages", cat: "Smoothies", name: "Chocolate Oats Smoothie ⭐", price: "250", img: "images/Chocolate pats smoothie.jpg.jpeg", desc: "Oats, banana, unsweetened cocoa, milk/oat milk. No sugar, slow carbs. (~310 kcal)" },
-    { section: "beverages", cat: "Smoothies", name: "Avocado Smoothie Bowl", price: "360", img: "images/Avocado smoothie.jpg.jpeg", desc: "Ripe avocado, banana, milk/oat milk, honey or dates, iced seeds. (~375 kcal)" },
+    { section: "beverages", cat: "Smoothies", name: "Avocado Smoothie Bowl", price: "360", img: "images/Avocado smoothie.jpg.jpeg", desc: "Ripe avocado, banana, milk/oat milk, honey or dates, chia seeds. (~375 kcal)" },
     { section: "beverages", cat: "Smoothies", name: "Vegan Plant Protein Smoothie", price: "280", img: "images/Vegan plant protein smoothie.jpg.jpeg", desc: "Spinach, banana, milk/oat milk, peanut butter, chia seeds. (~307 kcal)" },
-
+   
     // ------------------------------------------------------------------------------------------------
     // ---------------------------------------DESSERTS-------------------------------------------------
     // ------------------------------------------------------------------------------------------------
