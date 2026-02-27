@@ -174,7 +174,7 @@ const menuData = [
     { section: "beverages", cat: "Iced Coffee", name: "Iced Vietnamese Black", price: "170", img: "images/beverages/iced veitnamese black.jpeg", desc: "Strong dark-roasted robusta poured over ice" },
     { section: "beverages", cat: "Iced Coffee", name: "Iced Vietnamese White", price: "200", img: "images/beverages/iced veitnamese white.jpeg", desc: "Creamy light-roast coffee served cold" },
     { section: "beverages", cat: "Iced Coffee", name: "Oreo Coffee", price: "200", img: "images/beverages/oreo coffee.jpeg", desc: "Cold coffee blended with Oreo" },
-    { section: "beverages", cat: "Iced Coffee", name: "Coffee Tornado", price: "220", img: "", desc: "A swirling iced coffee blend" },
+    { section: "beverages", cat: "Iced Coffee", name: "Coffee Tornado", price: "220", img: "images/beverages/Coffee tornado.jpeg", desc: "A swirling iced coffee blend" },
 
     // ── FRAPPE ────────────────────────────────────────────────
     { section: "beverages", cat: "Frappe", name: "Signature Frappe", price: "200", img: "images/beverages/signature frappe.jpeg", desc: "TTR's signature blended coffee frappe" },
@@ -190,7 +190,7 @@ const menuData = [
     { section: "beverages", cat: "Signatures", name: "Espresso Tonic", price: "230", img: "images/beverages/espresso tonic.jpeg", desc: "Iced espresso with tonic water" },
     { section: "beverages", cat: "Signatures", name: "Coffee Punch", price: "199", img: "images/beverages/coffee punch.jpeg", desc: "Iced espresso with orange & cranberry juice" },
     { section: "beverages", cat: "Signatures", name: "Affogato", price: "180", img: "images/beverages/affogato.jpeg", desc: "Espresso poured over vanilla ice cream" },
-    { section: "beverages", cat: "Signatures", name: "Detox", price: "180", img: "", desc: "Espresso with ginger & ice" },
+    { section: "beverages", cat: "Signatures", name: "Detox", price: "180", img: "images/beverages/Detox.jpeg", desc: "Espresso with ginger & ice" },
 
     // // ── MANUAL BREWS ──────────────────────────────────────────
     // { section: "beverages", cat: "Manual Brews", name: "Whiskey Barrel", price: "199", img: "", desc: "Whiskey barrel processed specialty coffee brew" },
