@@ -202,17 +202,18 @@ const menuData = [
     { section: "beverages", cat: "Mocktails", name: "Classic Mojito", price: "180", img: "images/beverages/classic mojito.jpeg", desc: "Refreshing mint, lime and soda blended for a crisp, cool drink" },
     { section: "beverages", cat: "Mocktails", name: "Strawberry Mojito", price: "180", img: "images/beverages/strawberry mojito.jpeg", desc: "Fresh strawberries mixed with mint & lime for a fruity twist" },
     { section: "beverages", cat: "Mocktails", name: "Watermelon Mojito", price: "180", img: "images/beverages/Watermelon mojito.jpeg", desc: "Chilled watermelon infused with mint and lime for a light, summery sip" },
-    { section: "beverages", cat: "Mocktails", name: "Fresh Lime Soda", price: "150", img: "", desc: "Zesty lime with soda, served sweet, salty or balanced" },
-    { section: "beverages", cat: "Mocktails", name: "Spiced Guava", price: "180", img: "", desc: "Sweet guava juice with a dash of chilli & masala for a tangy kick" },
-    { section: "beverages", cat: "Mocktails", name: "Sparkling Vanilla", price: "150", img: "", desc: "Fizzy soda infused with smooth aromatic vanilla" },
+    { section: "beverages", cat: "Mocktails", name: "Fresh Lime Soda", price: "150", img: "images/beverages/Fresh lime soda.jpeg", desc: "Zesty lime with soda, served sweet, salty or balanced" },
+    { section: "beverages", cat: "Mocktails", name: "Spiced Guava", price: "180", img: "images/beverages/spiced guava.jpeg", desc: "Sweet guava juice with a dash of chilli & masala for a tangy kick" },
+    { section: "beverages", cat: "Mocktails", name: "Sparkling Vanilla", price: "150", img: "images/beverages/sparkling vanilla.jpeg", desc: "Fizzy soda infused with smooth aromatic vanilla" },
+    
+   // ── ICED TEA ──────────────────────────────────────────────
+    { section: "beverages", cat: "Iced Tea", name: "Lemon Mint Iced Tea", price: "190", img: "images/beverages/lemon mint iced.jpeg", desc: "Zesty lemon and cool mint blended with chilled tea" },
+    { section: "beverages", cat: "Iced Tea", name: "Peach Iced Tea", price: "210", img: "images/beverages/peach iced tea.jpeg", desc: "Smooth iced tea infused with sweet, juicy peach flavour" },
+    { section: "beverages", cat: "Iced Tea", name: "Watermelon Iced Tea", price: "190", img: "images/beverages/watermelon iced tea.jpeg", desc: "Light and refreshing tea mixed with fresh watermelon notes" },
+    { section: "beverages", cat: "Iced Tea", name: "Cranberry Iced Tea", price: "200", img: "images/beverages/cranberry iced tea.jpeg", desc: "Tangy cranberry blended with chilled iced tea for a crisp finish" },
+    { section: "beverages", cat: "Iced Tea", name: "Orange Iced Tea", price: "200", img: "images/beverages/orange iced tea.jpeg", desc: "Refreshing black tea infused with fresh, zesty orange flavor" },
+    { section: "beverages", cat: "Iced Tea", name: "Redbull Iced Tea", price: "200", img: "images/beverages/redbull iced tea.jpeg", desc: "Chilled beverage blending the energy of Red Bull with tea flavor" },
 
-    // ── ICED TEA ──────────────────────────────────────────────
-    { section: "beverages", cat: "Iced Tea", name: "Lemon Mint Iced Tea", price: "190", img: "", desc: "Zesty lemon and cool mint blended with chilled tea" },
-    { section: "beverages", cat: "Iced Tea", name: "Peach Iced Tea", price: "210", img: "", desc: "Smooth iced tea infused with sweet, juicy peach flavour" },
-    { section: "beverages", cat: "Iced Tea", name: "Watermelon Iced Tea", price: "190", img: "", desc: "Light and refreshing tea mixed with fresh watermelon notes" },
-    { section: "beverages", cat: "Iced Tea", name: "Cranberry Iced Tea", price: "200", img: "", desc: "Tangy cranberry blended with chilled iced tea for a crisp finish" },
-    { section: "beverages", cat: "Iced Tea", name: "Orange Iced Tea", price: "200", img: "", desc: "Refreshing black tea infused with fresh, zesty orange flavor" },
-    { section: "beverages", cat: "Iced Tea", name: "Redbull Iced Tea", price: "200", img: "", desc: "Chilled beverage blending the energy of Red Bull with tea flavor" },
 
     // ── INDIAN TEA ────────────────────────────────────────────
     { section: "beverages", cat: "Indian Tea", name: "Lemon Grass Tea", price: "120", img: "", desc: "Soothing lemongrass infused tea" },
@@ -230,15 +231,15 @@ const menuData = [
     { section: "beverages", cat: "European Tea", name: "English Breakfast Tea", price: "120", img: "", desc: "English Breakfast tea is strong, energizing, improves focus and alertness — blended with hot water" },
     { section: "beverages", cat: "European Tea", name: "Green Mint Tea", price: "120", img: "", desc: "Green mint tea refreshes mind, aids digestion, boosts metabolism — blended with hot water" },
 
-    // ── NATURAL MILKSHAKES ────────────────────────────────────
-    { section: "beverages", cat: "Natural Milkshakes", name: "Ragi Milkshake", price: "210", img: "", desc: "Nutritious ragi based natural milkshake" },
-    { section: "beverages", cat: "Natural Milkshakes", name: "Turmeric Honey Milkshake", price: "260", img: "", desc: "Golden turmeric blended with natural honey" },
-    { section: "beverages", cat: "Natural Milkshakes", name: "Oats Banana Milkshake", price: "210", img: "", desc: "Wholesome oats blended with ripe banana" },
-    { section: "beverages", cat: "Natural Milkshakes", name: "Strawberry Milkshake", price: "230", img: "", desc: "Fresh strawberry blended milkshake" },
-    { section: "beverages", cat: "Natural Milkshakes", name: "Mix Berry Milkshake", price: "310", img: "", desc: "Blended mix of fresh seasonal berries" },
+   // ── NATURAL MILKSHAKES ────────────────────────────────────
+    { section: "beverages", cat: "Natural Milkshakes", name: "Ragi Milkshake", price: "210", img: "images/beverages/ragi milk shake.jpeg", desc: "Nutritious ragi based natural milkshake" },
+    { section: "beverages", cat: "Natural Milkshakes", name: "Turmeric Honey Milkshake", price: "260", img: "images/beverages/turmeric honey milkshake.jpeg", desc: "Golden turmeric blended with natural honey" },
+    { section: "beverages", cat: "Natural Milkshakes", name: "Oats Banana Milkshake", price: "210", img: "images/beverages/oats banana milkshake.jpeg", desc: "Wholesome oats blended with ripe banana" },
+    { section: "beverages", cat: "Natural Milkshakes", name: "Strawberry Milkshake", price: "230", img: "images/beverages/strawberry milkshake.jpeg", desc: "Fresh strawberry blended milkshake" },
+    { section: "beverages", cat: "Natural Milkshakes", name: "Mix Berry Milkshake", price: "310", img: "images/beverages/mix berry milkshake.jpeg", desc: "Blended mix of fresh seasonal berries" },
     { section: "beverages", cat: "Natural Milkshakes", name: "Dry Fruit Milkshake", price: "310", img: "images/beverages/dryfruit milkshake.jpeg", desc: "Rich milkshake loaded with mixed dry fruits" },
-    { section: "beverages", cat: "Natural Milkshakes", name: "Makhana Milkshake", price: "260", img: "", desc: "Creamy makhana based natural milkshake" },
-    { section: "beverages", cat: "Natural Milkshakes", name: "Brownie Honey Milkshake", price: "260", img: "", desc: "Indulgent brownie and honey blended milkshake" },
+    { section: "beverages", cat: "Natural Milkshakes", name: "Makhana Milkshake", price: "260", img: "images/beverages/makhana milkshake.jpeg", desc: "Creamy makhana based natural milkshake" },
+    { section: "beverages", cat: "Natural Milkshakes", name: "Brownie Honey Milkshake", price: "260", img: "images/beverages/brownie milkshake.jpeg", desc: "Indulgent brownie and honey blended milkshake" },
 
     // ── SMOOTHIES ─────────────────────────────────────────────
     { section: "beverages", cat: "Smoothies", name: "Dates Oats", price: "300", img: "images/Date oats smoothie.jpg.jpeg", desc: "Soaked dates, milk/oat milk. Natural sweetness + slow-release carbs. (~320 kcal)" },
