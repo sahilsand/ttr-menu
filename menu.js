@@ -152,12 +152,12 @@ const menuData = [
     { section: "beverages", cat: "Hot Coffee (Black)", name: "Vietnamese Black", price: "170", img: "images/beverages/veitnamese black.jpeg", desc: "Strong, bold, intense, dark-roasted, robusta flavor, high caffeine" },
 
     // ── HOT COFFEE (WHITE) ────────────────────────────────────
-    { section: "beverages", cat: "Hot Coffee (White)", name: "Cappuccino", price: "150", img: "", desc: "Espresso topped with steamed milk and a thick layer of foam" },
-    { section: "beverages", cat: "Hot Coffee (White)", name: "Cafe Latte", price: "150", img: "", desc: "Smooth espresso with steamed milk and light foam" },
-    { section: "beverages", cat: "Hot Coffee (White)", name: "Flat White", price: "150", img: "", desc: "Espresso with steamed milk and micro foam" },
-    { section: "beverages", cat: "Hot Coffee (White)", name: "Cortado (Hot/Ice)", price: "150", img: "", desc: "Espresso with equal amount of milk" },
-    { section: "beverages", cat: "Hot Coffee (White)", name: "Cafe Mocha", price: "170", img: "", desc: "Espresso with rich dark chocolate & steamed milk" },
-    { section: "beverages", cat: "Hot Coffee (White)", name: "White Mocha", price: "170", img: "", desc: "Espresso with rich white chocolate & steamed milk" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "Cappuccino", price: "150", img: "images/beverages/Cappuccino.jpeg", desc: "Espresso topped with steamed milk and a thick layer of foam" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "Cafe Latte", price: "150", img: "images/beverages/cafe latte.jpeg", desc: "Smooth espresso with steamed milk and light foam" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "Flat White", price: "150", img: "images/beverages/flat white.jpeg", desc: "Espresso with steamed milk and micro foam" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "Cortado (Hot/Ice)", price: "150", img: "images/beverages/cortado.jpeg", desc: "Espresso with equal amount of milk" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "Cafe Mocha", price: "170", img: "images/beverages/cafe mocha.jpeg", desc: "Espresso with rich dark chocolate & steamed milk" },
+    { section: "beverages", cat: "Hot Coffee (White)", name: "White Mocha", price: "170", img: "images/beverages/white mocha.jpeg", desc: "Espresso with rich white chocolate & steamed milk" },
     { section: "beverages", cat: "Hot Coffee (White)", name: "Biscoff Latte", price: "190", img: "images/beverages/Biscoff latte.jpeg", desc: "Lotus biscoff & espresso with thin layered frothed milk" },
     { section: "beverages", cat: "Hot Coffee (White)", name: "Chilli Cinnamon Latte", price: "190", img: "images/beverages/Chilli cinemon latte.jpeg", desc: "Smooth espresso with steamed milk, cinnamon & light foam" },
     { section: "beverages", cat: "Hot Coffee (White)", name: "Hot Chocolate", price: "199", img: "images/beverages/Hot chocolate.jpeg", desc: "Classic creamy cocoa" },
